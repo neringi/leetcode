@@ -8,7 +8,7 @@ import sys
 
 # HackerRank 
 #
-# Complete the 'miniMaxSum' function below.
+# Completed the 'miniMaxSum' function below.
 #
 # The function accepts INTEGER_ARRAY arr as parameter.
 #
@@ -19,7 +19,7 @@ import sys
 
 def miniMaxSum(arr):
     arr.sort()
-    print('sorted array: ', arr)
+    # print('sorted array: ', arr)
     min = sum(arr[0:4])
     max = sum(arr[1:5])
 
