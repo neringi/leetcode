@@ -10,7 +10,7 @@ import sys
 # 
 # Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 # 
-# Complete the 'diagonalDifference' function below.
+# Completed the 'diagonalDifference' function below.
 #
 # The function is expected to return an INTEGER.
 # The function accepts 2D_INTEGER_ARRAY arr as parameter.
@@ -23,8 +23,6 @@ def diagonalDifference(arr):
     diagonal2 = sum([row[-i-1] for i,row in enumerate(arr)])
     diff = abs(diagonal - diagonal2)
     return diff
-
-            
 
 if __name__ == '__main__':
     # fptr = open(os.environ['OUTPUT_PATH'], 'w')
