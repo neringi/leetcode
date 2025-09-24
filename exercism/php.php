@@ -11,18 +11,16 @@
         echo "Reversed string {$a} to: {$b}";
         ?>
         <!-- resistor color lookup (arrays) -->
-        $resistorcolor = [
-            "black" => 0
-            "brown" => 1
-            "red" => 2
-            "orange" => 3
-            "yellow" => 4
-            "green" => 5
-            "blue" => 6
-            "violet" => 7
-            "grey" => 8
-            "white" => 9
-            ]
+        <?php
+            function getAllColors(): array
+            {
+                return ["black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"];
+            };
+            function colorCode(string $color): int
+            {
+                return array_search($color, getAllColors());
+            };
+        ?>
         
     </body>
 </html>
